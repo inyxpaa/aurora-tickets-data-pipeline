@@ -1,0 +1,14 @@
+stats count_distinct(session_id) as sesiones by event_type, bin(1d) as dia
+| sort dia desc, sesiones desc
+
+filter event_type in ["detail", "purchase"]
+| stats count(*) as total by event_id, event_type
+| sort total desc
+| limit 20
+
+stats count(*) as peticiones by bin(1h) as hora
+| sort hora desc
+
+stats count(*) as peticiones by ip
+| sort peticiones desc
+| limit 10
