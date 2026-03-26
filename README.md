@@ -23,3 +23,7 @@ El sistema procesa logs de servidores web y bases de datos relacionales mediante
 * `/src`: Scripts de procesamiento en PySpark (Curación y Analítica).
 * `/sql`: Esquemas de base de datos y consultas de CloudWatch.
 * `/docs`: Memoria técnica detallada del proyecto y diagramas de arquitectura.
+
+## Conclusiones
+
+El proyecto Aurora Tickets ha sido un éxito. Hemos construido un pipeline de datos completo en la nube de AWS. La infraestructura es escalable. El procesamiento con Spark es rápido y eficiente. El sistema permite la toma de decisiones basada en datos reales a través de los paneles de visualización.
